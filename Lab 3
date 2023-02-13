@@ -1,0 +1,49 @@
+// Alyssa Delgado
+
+#include <iostream>  
+#include<stdio.h> 
+
+using namespace std;
+
+int main ()
+
+{
+  
+  cout <<"***********************************************************************" << endl;
+  cout <<"* *" << endl; 
+  cout<<"*Alyssa Delgado February 12, 2023*"<<endl;
+  cout<<"*CSC 101*"<<endl;
+  cout << "* *" << endl; 
+  cout<< "*Laboratory Assignment #3*"<<endl;
+  cout << "* *" << endl; 
+  cout << "* *" << endl; 
+  cout<<"*In this lab, I learn about creating an informative banner, ivestigate*"<<endl;
+  cout<<"*variables and basic math operations, basic outputs, and intro to strings*"<<endl;
+  cout << "* *" << endl; 
+  cout << "* *" << endl; 
+  cout<< "***********************************************************************" << endl;
+
+  cout << endl;
+  cout << "Hello World" << endl; 
+  cout << "Hello\tWorld" << endl;
+  cout << "Hello\nWorld" << endl;
+  cout << 123 << endl; 
+  cout << "123" << endl;
+  cout << "5 + 3" << endl;
+  cout << 5 + 3 << endl;  
+  cout << 5 + '3' << endl;
+  cout << (0.3 == 0.3L) << endl; 
+  cout << sizeof(double) << endl; 
+  cout << sizeof(int) << endl;
+
+  string name = "Bob";
+  int age = 32; 
+  cout << name << " is "  << age << "years old" << endl; string last = "Smith"; 
+  cout << name+last << endl;
+
+  printf("There are %d in a dozen and %d in a score\n", 12, 20); 
+  
+	return 0;
+
+}
+
