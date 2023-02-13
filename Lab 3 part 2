@@ -1,0 +1,83 @@
+// Alyssa Delgado
+
+#include <iostream>  
+#include<stdio.h> 
+
+using namespace std;
+
+int main ()
+
+{
+  
+  cout <<"***********************************************************************" << endl;
+  cout <<"* *" << endl; 
+  cout<<"*Alyssa Delgado February 12, 2023*"<<endl;
+  cout<<"*CSC 101*"<<endl;
+  cout << "* *" << endl; 
+  cout<< "*Laboratory Assignment #3*"<<endl;
+  cout << "* *" << endl; 
+  cout << "* *" << endl; 
+  cout<<"*In this lab, I learn about creating an informative banner, ivestigate*"<<endl;
+  cout<<"*variables and basic math operations, basic outputs, and intro to strings*"<<endl;
+  cout << "* *" << endl; 
+  cout << "* *" << endl; 
+  cout<< "***********************************************************************" << endl;
+
+
+
+  //Declaring variables
+
+  string name;
+
+  double cost,taxRate,subTot,tax,tot;
+
+  int noOfUnits;
+
+  /*
+
+  * Creating an Scanner class object which is used to get the inputs
+
+  * entered by the user
+
+  */
+
+  //Getting the input entered by the user
+
+  cout<<"Enter Item Name:";
+
+  cin>>name;
+
+  cout<<"Enter Cost of individual Item:";
+
+  cin>>cost;
+
+  cout<<"Enter no of units purchased:";
+
+  cin>>noOfUnits;
+
+  cout<<"Enter Tax Rate:";
+
+  cin>>taxRate;
+
+  //calculations
+
+  subTot=noOfUnits*cost;
+
+  tax=subTot*(taxRate/100);
+
+  tot=subTot+tax;
+
+  //Displaying the output
+
+  cout<<"\nSUNNY Orange Fruit Co.";
+
+  cout<<"Sales Invoice";
+
+  cout<<"\nItem\tQuantity\tUnit Price\tSubTotal\tTax\tTotal";
+
+  cout<<name<<"\t"<<noOfUnits<<"\t\t"<<cost<<"\t\t"<<subTot<<"\t\t"<<tax<<"\t"<<tot<<endl;
+
+  
+	return 0;
+
+}
