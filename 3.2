@@ -1,0 +1,46 @@
+// Alyssa Delgado
+
+#include <iostream>   
+#include <iomanip>
+#include <ios>
+
+using namespace std;
+using std::setw; //setw() is used to set the width during your output. It has to be set each time you want width.
+using std::right; //right is used to justify your output to the right. If once set, it remains throughout the program until you replace it.
+
+int main ()
+
+{
+  
+  cout << "--------------------------------" << endl;
+  cout<<"Alyssa Delgado"<<endl;
+  cout<< "Computer Science 1"<<endl;
+  cout<<"Lab 3"<<endl;
+  cout<<"February 2, 2023"<<endl;
+  cout << "--------------------------------" << endl;
+
+  int quantity1,quantity2; // We take quantities as integer as they are generally whole
+  float price1,price2; //since the price is a floating point number we make use of float
+
+  //cin, by defaullt can take multiple with inputs that are space seperated. So you can enter price followed by a space and quantity.
+
+  cout << "Please input the price and quantity of the first item\n"; //Inputting the price and quantity of first item.
+  cin >> price1;
+  cin >> quantity1;
+
+  cout << "Please input the price and quantity of the second item\n"; // Inputting the price and quantity of second item
+  cin >> price2;
+  cin >> quantity2;
+
+  // Using setw(), we set 15 spaces from margin for price.
+  cout << setw(15) << "PRICE";
+  cout<< setw(12) << "QUANTITY\n\n"; //From the last last character of price, we set another 12 spaces for quantity
+  cout<<right; //Aligning all the numbers that will further be output to right
+  cout << setw(15) << price1; //Setting 15 spaces for the right hand justified numbers.
+  cout << setw(5) << quantity1 <<"\n"; // Here the question does not give the width of quantity numbers and thus, I have taken 5.
+  cout << setw(15) << price2;
+  cout << setw(5) << quantity2 <<"\n";
+
+    return 0;
+  
+}
